@@ -1,0 +1,40 @@
+#logging.pattern.console="%d - %msg%n"
+#logging.path=target/logs/
+#logging.file=target/logs/sell.log
+#logging.level.root=debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.90.31:3306/sell?characterEncoding=utf-8&userSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+#  mvc:
+#    view:
+#      prefix: /
+#      suffix: .html
+#  resources:
+#    static-locations: classpath:/static/dist/
+server:
+  context-path: /sell
+
+wechat:
+  mpAppId: wx0dbf424342168818
+  mpAppSecret: afd3060b172d19dcd529b1a34b0a2ef0
+  mchId: 1498106042
+  mchKey: j1zvtZupwGNLFhormMiNfVpMw0b11K7p
+  keyPath: D:\PrjDev\STUDY\Sell\src\main\resources\apiclient_cert.p12
+  notifyUrl: http://tangah.nat300.top/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://tangah.nat300.top/
+
+
+
+
+
+

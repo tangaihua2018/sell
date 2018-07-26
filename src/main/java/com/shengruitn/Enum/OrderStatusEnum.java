@@ -1,0 +1,18 @@
+package com.shengruitn.Enum;
+
+import lombok.Getter;
+
+@Getter
+public enum OrderStatusEnum implements CodeEnum{
+    NEW(0,"新订单"),
+    FINISHED(1,"完结"),
+    CACEL(2,"取消");
+
+    private Integer code;
+    private String message;
+
+    OrderStatusEnum(Integer code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+}
