@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @ProjectName Sell
  * @Description: 解决跨域访问
  * @date 2018/7/26     0:16
+ * 
  */
 
 @Configuration
